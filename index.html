@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halaman Sederhana</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.pexels.com/photos/9846093/pexels-photo-9846093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    color: hsl(0, 0%, 100%);
+  }
+
+  header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #clock {
+    font-size: 240px;
+    text-align: center;
+    margin-top: 200px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Halaman Sederhana</h1>
+</header>
+
+<main>
+  <p>Membuat halaman HTML5 sederhana dengan styling menggunakan CSS dan
+    JavaScript.</p>
+  <div id="clock"></div>
+</main>
+
+<footer>
+  <p>&copy; 2024 Rizki Agung Dzulikromi</p>
+</footer>
+
+<script>
+  function updateClock() {
+    var now = new Date();
+    var hours = now.getHours();
+    var minutes = now.getMinutes();
+    var seconds = now.getSeconds();
+    var timeString = formatTime(hours) + ":" + formatTime(minutes) + ":" + formatTime(seconds);
+    document.getElementById('clock').textContent = timeString;
+    setTimeout(updateClock, 1000); // Update every second
+  }
+
+  function formatTime(time) {
+    return (time < 10 ? "0" : "") + time;
+  }
+
+  // Call the updateClock function once to start the clock
+  updateClock();
+</script>
+
+</body>
+</html>
