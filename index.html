@@ -78,3 +78,86 @@
 
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contoh Tanggal dengan Java di HTML</title>
+</head>
+<body>
+
+<h1>Tanggal Sekarang:</h1>
+<p id="tanggal"></p>
+
+<script>
+  // Membuat objek Date untuk mendapatkan tanggal saat ini
+  var tanggalSekarang = new Date();
+  
+  // Mengambil tanggal, bulan, dan tahun dari objek Date
+  var tanggal = tanggalSekarang.getDate();
+  var bulan = tanggalSekarang.getMonth() + 1; // Menggunakan +1 karena Januari dimulai dari 0
+  var tahun = tanggalSekarang.getFullYear();
+  
+  // Menyusun tanggal dalam format yang diinginkan (misal: DD/MM/YYYY)
+  var tanggalFormat = tanggal + '/' + bulan + '/' + tahun;
+  
+  // Menampilkan tanggal ke dalam elemen HTML dengan id="tanggal"
+  document.getElementById('tanggal').innerText = tanggalFormat;
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contoh Tanggal dengan Java di HTML</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: hsl(0, 0%, 100%);
+  }
+  
+  #tanggal {
+    font-size: 50px;
+    color: hsl(0, 0%, 100%);
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<h1></h1>
+<p id="tanggal"></p>
+
+<script>
+  // Membuat objek Date untuk mendapatkan tanggal saat ini
+  var tanggalSekarang = new Date();
+  
+  // Mengambil tanggal, bulan, dan tahun dari objek Date
+  var tanggal = tanggalSekarang.getDate();
+  var bulan = tanggalSekarang.getMonth() + 1; // Menggunakan +1 karena Januari dimulai dari 0
+  var tahun = tanggalSekarang.getFullYear();
+  
+  // Menyusun tanggal dalam format yang diinginkan (misal: DD/MM/YYYY)
+  var tanggalFormat = tanggal + '/' + bulan + '/' + tahun;
+  
+  // Menampilkan tanggal ke dalam elemen HTML dengan id="tanggal"
+  document.getElementById('tanggal').innerText = tanggalFormat;
+</script>
+
+</body>
+</html>
+
+
